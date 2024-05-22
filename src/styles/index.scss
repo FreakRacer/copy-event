@@ -1,0 +1,208 @@
+@mixin text($weight, $size, $height, $color) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+@mixin box($width, $height, $radius, $bg, $padding) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+  background-color: $bg;
+  padding: $padding;
+}
+
+$black: #393939;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-custom{
+  max-width: 300px ;
+  height: auto;
+  margin: auto;
+}
+
+// HEAD 
+
+/*
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    max-width: 154px;
+    height: auto;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    a {
+      text-decoration: none;
+      transition: all 0.3s;
+      @include text(700, 24px, 28px, $black);
+    }
+    a:hover {
+      color: rgba(73, 85, 86, 0.491);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+}
+
+main {
+  padding-top: 65px;
+
+  p {
+    text-align: center;
+    @include text(700, 288px, 345px, $black);
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 240px;
+    .button {
+      width: 58px;
+      height: 58px;
+      border-radius: 27px;
+      transition: all 0.3s;
+    }
+    .button:nth-child(1) {
+      background-color: #0fc50b;
+      text-align: center;
+      padding-top: 15px;
+      @include text(700, 24px, 28px, white);
+    }
+    .button:nth-child(2) {
+      background-color: #e5e5e5;
+      padding: 13px;
+      img {
+        width: 29px;
+        height: auto;
+      }
+    }
+    .button:nth-child(3) {
+      background-color: #f64c4c;
+      text-align: center;
+      padding-top: 15px;
+      @include text(700, 24px, 28px, white);
+    }
+    .button:hover {
+      background-color: rgba(119, 144, 145, 0.377);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+}
+
+footer {
+  padding-top: 196px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 93px;
+    height: auto;
+  }
+  .footer__menu {
+    display: flex;
+    list-style: none;
+    column-gap: 27px;
+    a {
+      text-decoration: none;
+      transition: all 0.3s;
+      @include text(700, 16px, 19px, $black);
+    }
+    a:hover {
+      color: rgba(73, 85, 86, 0.491);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+  .copyright {
+    @include text(700, 16px, 19px, $black);
+  }
+};
+
+.car{
+  p{
+    @include text(700px, 20px, 25px, red);
+  }
+}
+*/
+// first project
+
+/*
+.inbox{
+  background-color: #0fc50b;
+}
+
+.outbox{
+  background-color: #f64c4c;
+  color: white;
+}
+*/
+// MESSAGES
+
+// LAST HOMEWORK
+header{
+  h1{
+    text-align: center;
+    letter-spacing: 3px;
+    @include text(700, 32px, 39px, #64C4ED)
+  }
+}
+main{
+  padding: 45px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  .item-todo{
+    display: flex;
+    justify-content: space-between;
+    .item-text{
+      letter-spacing: px;
+      @include text(600, 16px, 19px, black)
+    }
+    }
+    .strike{
+      text-decoration: line-through;
+    }
+    .item-delete{
+      width: 21px;
+      height: 21px;
+      color: white;
+      background-color: red;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.2;
+    }
+    form{
+      padding-top:20px ;
+      display: flex;
+      column-gap: 10px;
+      button{
+        border: none;
+        background: none ;
+        color:#B4B4B4;
+        
+      }
+      input{
+        border: none;
+        width: 110px;
+        height: auto;
+        align-items: center;
+
+      }
+      input::placeholder{
+        @include text(600, 16px, 19px, #B4B4B4 )
+        
+      }
+    }
+  }
+
+
