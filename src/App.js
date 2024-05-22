@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
@@ -6,6 +6,7 @@ import Homework from "./Homework";
 import HomeworkA from "./Homework/HomeworkA";
 import HomeworkB from "./Homework/HomeworkB";
 import HomeworkC from "./Homework/HomeworkC";
+import HomeworkD from './Homework/HomeworkD'
 
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
 
   return (
       
-      <HomeworkC/>
+         <HomeworkD/>
+
+      // <HomeworkC/>
 
       // {/* <HomeworkB/> */}
 
